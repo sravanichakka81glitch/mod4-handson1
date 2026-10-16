@@ -1,0 +1,27 @@
+# 🎬 Telugu Movie Sentiment Analysis using Naive Bayes
+
+A complete NLP project that classifies Telugu movies as **HIT (positive)** or **FLOP (negative)**
+using **tokenization**, **TF-IDF vectorization**, and a **Multinomial Naive Bayes** classifier.
+
+## 📂 Project Structure
+
+
+
+## ⚙️ Setup
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Generate the dataset
+python src/generate_dataset.py
+
+# 3. Train the Naive Bayes model
+python src/train_model.py
+
+# 4. Test from the CLI
+python src/predict.py Bahubali
+python src/predict.py Radhe Shyam
+
+# 5. Launch the Streamlit prompt-box UI
+streamlit run app.py
